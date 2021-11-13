@@ -52,8 +52,7 @@ main {
 main .card {
   position: relative;
   width: 300px;
-  height: 500px;
-  background-color: #1b1b1d;
+  background-color: var(--second-color);
   color: #fff;
   font-size: 16px;
   border-radius: 7px;
@@ -64,20 +63,22 @@ main .card {
 }
 main .card .movie-image {
   width: 100%;
-  height: 80%;
   border-radius: 7px 7px 0 0;
 }
 main .card .movie-info {
   display: flex;
   justify-content: space-between;
   letter-spacing: 0.5px;
+  padding-bottom: 30px;
 }
 main .card .movie-info .movie-title {
   margin: 0;
-  padding: 15px 70px 0px 15px;
+  padding: 15px 10px;
 }
 main .card .movie-info span {
   margin: 15px;
+  width: 50px;
+  height: 50px;
   font-weight: bold;
   color: #fff;
   background-color: var(--main-color);
@@ -100,11 +101,11 @@ main .card .movie-info span.red {
 main .card .overview-container {
   position: absolute;
   top: 0;
-  max-height: 80%;
+  height: 100%;
   opacity: 0;
-  padding: 60px 40px 60px 30px;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: rgb(216, 216, 216);
+  color: #d8d8d8;
   overflow: hidden;
   transition: all 0.5s ease-in;
 }
@@ -113,9 +114,11 @@ main .card:hover .overview-container {
 }
 main .card .overview-container h3 {
   margin-bottom: 10px;
+  text-align: center;
 }
 main .card .overview-container p {
-  line-height: 1.9;
+  line-height: 1.8;
+  font-size: 14px;
 }
 
 footer {
